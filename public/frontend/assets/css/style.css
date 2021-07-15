@@ -1,0 +1,254 @@
+* {
+     padding: 0;
+     margin: 0;
+}
+
+body {
+     height: 100%;
+     background-image: url(" http://localhost/frontend/assets/images/background.jpg");
+}
+
+a {
+     text-decoration: none;
+}
+
+li {
+     margin-bottom: 0;
+}
+
+ul {
+     list-style: none;
+     margin-bottom: 0;
+}
+
+a:hover {
+     text-decoration: none;
+}
+header {
+     /* position: -webkit-sticky; 
+     position: sticky;
+     top: 0;
+     z-index: 1000; */
+}
+
+.menu {
+     width: 100%;
+     padding: 10px 0;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+}
+.content img {
+     width: 40%;
+     margin-bottom: 20px;
+}
+.menu .home a{
+     color: white;
+     font-size: 20px;
+}
+
+ul.list-menu li {
+     
+     float: left;
+     margin: 0 20px;
+}
+
+ul.list-menu li a {
+     padding: 8px 0;
+    
+     color: white;
+     font-size: 20px;
+     font-weight: 600;
+}
+ul.list-menu li a.active {
+     border-bottom: 4px solid red;   
+}
+ input[type=radio] {
+      width: 20px;
+      height: 20px;
+ }
+.list-menu.show {
+     max-height: 100vh;
+}
+.section-body {
+     width: 100%;
+     height: 100vh;
+     position: relative;
+}
+.sidebar-light {
+     border: 1px solid #C1C1C1;
+     background: white;
+     padding: 0 20px;
+     height: 100vh;
+     overflow-y: hidden;
+}
+.sidebar-light ul li a {
+     display: block;
+     padding-bottom: 5px;
+     color: #1a1a1a;
+     margin-top: 20px;
+     border-bottom: 2px solid #C1C1C1;
+
+}
+
+
+.sidebar-left {
+     height: 100vh;
+     overflow-y: auto;
+
+     width: 20%;
+     float: left;
+     border-right: 1px solid #F1F3F4;
+     overflow-x: hidden;
+     padding-top: 20px;
+     text-align: left;
+}
+
+.sidebar-left p {
+     margin-left: 10px;
+     font-size: 20px;
+     margin-bottom: 20px;
+     font-weight: 500;
+}
+
+.sidebar-left a {
+     display: block;
+     margin-top: 10px;
+     color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+     background-color: #E0E0E0;
+     color: #1D1D1F;
+}
+tr, td {
+     text-align: left;
+     padding: 8px 20px 8px 20px;
+   }
+#style-scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#style-scroll::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-scroll::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+.content {
+     height: 100vh;
+     overflow-y: auto;
+     width: 80%;
+     padding: 20px;
+     float: left;
+     text-align: justify;
+     background-color: #fcfeff;
+}
+.content img {
+     float: right;
+}
+.content p.title {
+     font-size: 20px;
+     font-weight: 600;
+}
+.content p {
+     font-size: 16px;
+     font-weight: 500;
+}
+
+
+.contact p {
+     margin-bottom: 0;
+
+}
+.evaluate p {
+     margin-bottom: 0;
+}
+.contact {
+     position: fixed;
+     width: 50px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     background-color: #1D1D1F;
+     color: white;
+     bottom: 80px;
+     cursor: pointer;
+     right: 20px;
+}
+.search {
+     position: fixed;
+     width: 50px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     background-color: #1D1D1F;
+     color: white;
+     bottom: 140px;
+     cursor: pointer;
+     right: 20px;
+}
+.evaluate {
+     position: fixed;
+     width: 50px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     background-color: #1D1D1F;
+     color: white;
+     bottom: 20px;
+     cursor: pointer;
+     right: 20px;
+}
+.table td, .table th , .table thead th {
+     border: none;
+    width: 16.67%;
+    text-align: center;
+    
+}
+.button {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 786px) {
+
+     ul.list-menu li {
+          width: 100%;
+          margin: 10px 0;
+
+     }
+     .button {
+          opacity: 1;
+          visibility: visible;
+     }
+
+     ul.list-menu {
+          max-height: 0px;
+          width: 100%;
+          transition: 0.4s;
+          overflow: hidden;
+     }
+
+     .menu {
+          padding: 20px 30px;
+          justify-content: space-between;
+          flex-wrap: wrap;
+     }
+
+}
